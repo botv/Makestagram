@@ -165,8 +165,8 @@
                         <viewLayoutGuide key="safeArea" id="nX7-Yy-EqF"/>
                     </view>
                     <connections>
-                        <outlet property="createUsernameTextField" destination="ORk-8y-yXd" id="QKs-4H-Z07"/>
                         <outlet property="nextButton" destination="W2h-Kg-xGC" id="SDY-Df-YhW"/>
+                        <outlet property="usernameTextField" destination="ORk-8y-yXd" id="yTX-Bm-THi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lbS-Ki-l3T" userLabel="First Responder" sceneMemberID="firstResponder"/>
