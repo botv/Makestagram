@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		842FB06C20F340D300D9D06A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 842FB06B20F340D300D9D06A /* GoogleService-Info.plist */; };
 		849E53D220F33BF000A49125 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849E53D120F33BF000A49125 /* AppDelegate.swift */; };
 		849E53D420F33BF000A49125 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849E53D320F33BF000A49125 /* ViewController.swift */; };
 		849E53D720F33BF000A49125 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849E53D520F33BF000A49125 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		266BAC1020C22389BB2CFAB0 /* Pods_Makestagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Makestagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35776F466E1546F1B5A838C9 /* Pods-Makestagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.release.xcconfig"; sourceTree = "<group>"; };
+		842FB06B20F340D300D9D06A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		849E53CE20F33BF000A49125 /* Makestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		849E53D120F33BF000A49125 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		849E53D320F33BF000A49125 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				849E53D520F33BF000A49125 /* Main.storyboard */,
 				849E53D820F33BF100A49125 /* Assets.xcassets */,
 				849E53DA20F33BF100A49125 /* LaunchScreen.storyboard */,
+				842FB06B20F340D300D9D06A /* GoogleService-Info.plist */,
 				849E53DD20F33BF100A49125 /* Info.plist */,
 			);
 			path = Makestagram;
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				849E53DC20F33BF100A49125 /* LaunchScreen.storyboard in Resources */,
+				842FB06C20F340D300D9D06A /* GoogleService-Info.plist in Resources */,
 				849E53D920F33BF100A49125 /* Assets.xcassets in Resources */,
 				849E53D720F33BF000A49125 /* Main.storyboard in Resources */,
 			);
