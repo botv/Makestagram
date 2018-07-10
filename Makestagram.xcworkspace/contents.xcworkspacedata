@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/botvinick/Desktop/GitHub/Makestagram/Makestagram/Controllers/FindFriendsViewController.swift">
+   </FileRef>
+   <FileRef
       location = "group:Makestagram.xcodeproj">
    </FileRef>
    <FileRef
