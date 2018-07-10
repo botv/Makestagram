@@ -54,7 +54,6 @@ extension LoginViewController: FUIAuthDelegate {
                 self.view.window?.rootViewController = initialViewController
                 self.view.window?.makeKeyAndVisible()
             } else {
-                // 1
                 self.performSegue(withIdentifier: Constants.Segue.toCreateUsername, sender: self)
             }
         })
