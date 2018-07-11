@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+  
 class MGPhotoHelper: NSObject {
     
     // MARK: - Properties
@@ -39,7 +39,7 @@ class MGPhotoHelper: NSObject {
         
         viewController.present(alertController, animated: true)
     }
-    
+ 
     func presentImagePickerController(with sourceType: UIImagePickerControllerSourceType, from viewController: UIViewController) {
         let imagePickerController = UIImagePickerController()
         imagePickerController.sourceType = sourceType

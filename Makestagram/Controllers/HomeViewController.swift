@@ -2,27 +2,23 @@
 //  HomeViewController.swift
 //  Makestagram
 //
-//  Created by Ben Botvinick on 7/10/18.
-//  Copyright © 2018 Ben Botvinick. All rights reserved.
-//
-
-//
-//  LoginViewController.swift
-//  Makestagram
-//
-//  Created by Ben Botvinick on 7/9/18.
+//  Created by Ben Botvinick on 7/11/18.
 //  Copyright © 2018 Ben Botvinick. All rights reserved.
 //
 
 import UIKit
 
-class HomeViewController : UIViewController {
+class HomeViewController: UIViewController {
+    
+    // Mark: - Properties
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    // Mark: - VC Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
+    class HomeViewController
 }
