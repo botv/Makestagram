@@ -14,6 +14,7 @@
 		848FB53920F67193008A6B1B /* StorageReference+Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FB53820F67193008A6B1B /* StorageReference+Post.swift */; };
 		848FB53C20F67429008A6B1B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848FB53B20F67429008A6B1B /* Home.storyboard */; };
 		848FB54020F6759B008A6B1B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FB53F20F6759B008A6B1B /* HomeViewController.swift */; };
+		848FB54220F67CF6008A6B1B /* PostImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FB54120F67CF6008A6B1B /* PostImageCell.swift */; };
 		849E53D220F33BF000A49125 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849E53D120F33BF000A49125 /* AppDelegate.swift */; };
 		849E53D720F33BF000A49125 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849E53D520F33BF000A49125 /* Main.storyboard */; };
 		849E53D920F33BF100A49125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849E53D820F33BF100A49125 /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 		848FB53820F67193008A6B1B /* StorageReference+Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StorageReference+Post.swift"; sourceTree = "<group>"; };
 		848FB53B20F67429008A6B1B /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = ../../../../../.Trash/Home.storyboard; sourceTree = "<group>"; };
 		848FB53F20F6759B008A6B1B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		848FB54120F67CF6008A6B1B /* PostImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageCell.swift; sourceTree = "<group>"; };
 		849E53CE20F33BF000A49125 /* Makestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		849E53D120F33BF000A49125 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		849E53D620F33BF000A49125 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 		842FB07420F342B500D9D06A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				848FB54120F67CF6008A6B1B /* PostImageCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -292,6 +296,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -349,6 +354,7 @@
 				848FB54020F6759B008A6B1B /* HomeViewController.swift in Sources */,
 				84EECF1C20F51DA5004FF302 /* MainTabBarController.swift in Sources */,
 				84B3EBBE20F4015F002B71E5 /* UserService.swift in Sources */,
+				848FB54220F67CF6008A6B1B /* PostImageCell.swift in Sources */,
 				848FB53520F66CEB008A6B1B /* Post.swift in Sources */,
 				848FB53720F6708B008A6B1B /* UIImage+Size.swift in Sources */,
 				84B3EBB820F3F805002B71E5 /* CreateUsernameViewController.swift in Sources */,
