@@ -9,16 +9,16 @@
 /* Begin PBXBuildFile section */
 		840B531B20F548D7005649F0 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B531A20F548D7005649F0 /* StorageService.swift */; };
 		842FB06C20F340D300D9D06A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 842FB06B20F340D300D9D06A /* GoogleService-Info.plist */; };
+		84358A3A20F7ABD500B2265C /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 84358A3920F7ABD500B2265C /* Inceptionv3.mlmodel */; };
+		84358A3C20F7AC9800B2265C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84358A3B20F7AC9800B2265C /* Home.storyboard */; };
 		848FB53520F66CEB008A6B1B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FB53420F66CEB008A6B1B /* Post.swift */; };
 		848FB53720F6708B008A6B1B /* UIImage+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FB53620F6708B008A6B1B /* UIImage+Size.swift */; };
 		848FB53920F67193008A6B1B /* StorageReference+Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FB53820F67193008A6B1B /* StorageReference+Post.swift */; };
-		848FB53C20F67429008A6B1B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848FB53B20F67429008A6B1B /* Home.storyboard */; };
 		848FB54020F6759B008A6B1B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FB53F20F6759B008A6B1B /* HomeViewController.swift */; };
 		848FB54220F67CF6008A6B1B /* PostImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FB54120F67CF6008A6B1B /* PostImageCell.swift */; };
 		848FB54420F69316008A6B1B /* PostHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FB54320F69316008A6B1B /* PostHeaderCell.swift */; };
 		848FB54620F694B5008A6B1B /* PostActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FB54520F694B5008A6B1B /* PostActionCell.swift */; };
 		848FB54820F6C41F008A6B1B /* MLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FB54720F6C41F008A6B1B /* MLService.swift */; };
-		848FB54B20F6C730008A6B1B /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 848FB54A20F6C730008A6B1B /* Inceptionv3.mlmodel */; };
 		849E53D220F33BF000A49125 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849E53D120F33BF000A49125 /* AppDelegate.swift */; };
 		849E53D720F33BF000A49125 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849E53D520F33BF000A49125 /* Main.storyboard */; };
 		849E53D920F33BF100A49125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849E53D820F33BF100A49125 /* Assets.xcassets */; };
@@ -42,16 +42,16 @@
 		35776F466E1546F1B5A838C9 /* Pods-Makestagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.release.xcconfig"; sourceTree = "<group>"; };
 		840B531A20F548D7005649F0 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		842FB06B20F340D300D9D06A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Makestagram/Supporting/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		84358A3920F7ABD500B2265C /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Inceptionv3.mlmodel; path = "../../../../CoreML Models/Inceptionv3.mlmodel"; sourceTree = "<group>"; };
+		84358A3B20F7AC9800B2265C /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = ../../../../../Downloads/Home.storyboard; sourceTree = "<group>"; };
 		848FB53420F66CEB008A6B1B /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		848FB53620F6708B008A6B1B /* UIImage+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Size.swift"; sourceTree = "<group>"; };
 		848FB53820F67193008A6B1B /* StorageReference+Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StorageReference+Post.swift"; sourceTree = "<group>"; };
-		848FB53B20F67429008A6B1B /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = ../../../../../.Trash/Home.storyboard; sourceTree = "<group>"; };
 		848FB53F20F6759B008A6B1B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		848FB54120F67CF6008A6B1B /* PostImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageCell.swift; sourceTree = "<group>"; };
 		848FB54320F69316008A6B1B /* PostHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHeaderCell.swift; sourceTree = "<group>"; };
 		848FB54520F694B5008A6B1B /* PostActionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostActionCell.swift; sourceTree = "<group>"; };
 		848FB54720F6C41F008A6B1B /* MLService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLService.swift; sourceTree = "<group>"; };
-		848FB54A20F6C730008A6B1B /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Inceptionv3.mlmodel; path = ../../../../../Downloads/Inceptionv3.mlmodel; sourceTree = "<group>"; };
 		849E53CE20F33BF000A49125 /* Makestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		849E53D120F33BF000A49125 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		849E53D620F33BF000A49125 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -147,8 +147,8 @@
 			isa = PBXGroup;
 			children = (
 				849E53D520F33BF000A49125 /* Main.storyboard */,
+				84358A3B20F7AC9800B2265C /* Home.storyboard */,
 				849E53DA20F33BF100A49125 /* LaunchScreen.storyboard */,
-				848FB53B20F67429008A6B1B /* Home.storyboard */,
 				84B3EBBB20F3FBB8002B71E5 /* Login.storyboard */,
 			);
 			path = Storyboards;
@@ -177,7 +177,7 @@
 		848FB54920F6C6DD008A6B1B /* MLModels */ = {
 			isa = PBXGroup;
 			children = (
-				848FB54A20F6C730008A6B1B /* Inceptionv3.mlmodel */,
+				84358A3920F7ABD500B2265C /* Inceptionv3.mlmodel */,
 			);
 			path = MLModels;
 			sourceTree = "<group>";
@@ -290,7 +290,7 @@
 				849E53DC20F33BF100A49125 /* LaunchScreen.storyboard in Resources */,
 				842FB06C20F340D300D9D06A /* GoogleService-Info.plist in Resources */,
 				84B3EBBC20F3FBB8002B71E5 /* Login.storyboard in Resources */,
-				848FB53C20F67429008A6B1B /* Home.storyboard in Resources */,
+				84358A3C20F7AC9800B2265C /* Home.storyboard in Resources */,
 				849E53D920F33BF100A49125 /* Assets.xcassets in Resources */,
 				849E53D720F33BF000A49125 /* Main.storyboard in Resources */,
 			);
@@ -379,9 +379,9 @@
 				848FB53520F66CEB008A6B1B /* Post.swift in Sources */,
 				848FB53720F6708B008A6B1B /* UIImage+Size.swift in Sources */,
 				84B3EBB820F3F805002B71E5 /* CreateUsernameViewController.swift in Sources */,
+				84358A3A20F7ABD500B2265C /* Inceptionv3.mlmodel in Sources */,
 				84EECF1E20F5205C004FF302 /* MGPhotoHelper.swift in Sources */,
 				849E53D220F33BF000A49125 /* AppDelegate.swift in Sources */,
-				848FB54B20F6C730008A6B1B /* Inceptionv3.mlmodel in Sources */,
 				848FB53920F67193008A6B1B /* StorageReference+Post.swift in Sources */,
 				84EECF1A20F51B19004FF302 /* Storyboard+Utility.swift in Sources */,
 				84D96ECB20F665AA007CA4ED /* PostService.swift in Sources */,
