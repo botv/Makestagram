@@ -61,6 +61,7 @@ extension HomeViewController: UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: "PostImageCell") as! PostImageCell
             let imageURL = URL(string: post.imageURL)
             cell.postImageView.kf.setImage(with: imageURL)
+            cell.postTagsLabel.text = post.tags[0]
             
             return cell
             
