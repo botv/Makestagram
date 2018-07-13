@@ -30,7 +30,8 @@ struct MLService {
                 post.tags.append("<no tags>")
                 completionHandler(post)
             } else {
-                post.tags.append(features[0].label)
+                let topResult = features[0]
+                post.tags.append("\(topResult.label) - \(String(format: "%.3f", topResult.confidence * 100))%")
                 completionHandler(post)
             }
         }
