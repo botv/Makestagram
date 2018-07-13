@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		840B531B20F548D7005649F0 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B531A20F548D7005649F0 /* StorageService.swift */; };
 		842FB06C20F340D300D9D06A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 842FB06B20F340D300D9D06A /* GoogleService-Info.plist */; };
-		84358A3A20F7ABD500B2265C /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 84358A3920F7ABD500B2265C /* Inceptionv3.mlmodel */; };
 		84358A3E20F7BE3E00B2265C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84358A3D20F7BE3D00B2265C /* Home.storyboard */; };
 		848FB53520F66CEB008A6B1B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FB53420F66CEB008A6B1B /* Post.swift */; };
 		848FB53720F6708B008A6B1B /* UIImage+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FB53620F6708B008A6B1B /* UIImage+Size.swift */; };
@@ -42,7 +41,6 @@
 		35776F466E1546F1B5A838C9 /* Pods-Makestagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.release.xcconfig"; sourceTree = "<group>"; };
 		840B531A20F548D7005649F0 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		842FB06B20F340D300D9D06A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Makestagram/Supporting/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
-		84358A3920F7ABD500B2265C /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Inceptionv3.mlmodel; path = "../../../../CoreML Models/Inceptionv3.mlmodel"; sourceTree = "<group>"; };
 		84358A3D20F7BE3D00B2265C /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		848FB53420F66CEB008A6B1B /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		848FB53620F6708B008A6B1B /* UIImage+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Size.swift"; sourceTree = "<group>"; };
@@ -174,14 +172,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		848FB54920F6C6DD008A6B1B /* MLModels */ = {
-			isa = PBXGroup;
-			children = (
-				84358A3920F7ABD500B2265C /* Inceptionv3.mlmodel */,
-			);
-			path = MLModels;
-			sourceTree = "<group>";
-		};
 		849E53C520F33BF000A49125 = {
 			isa = PBXGroup;
 			children = (
@@ -203,7 +193,6 @@
 		849E53D020F33BF000A49125 /* Makestagram */ = {
 			isa = PBXGroup;
 			children = (
-				848FB54920F6C6DD008A6B1B /* MLModels */,
 				842FB07420F342B500D9D06A /* Views */,
 				842FB07320F342AA00D9D06A /* Supporting */,
 				842FB07220F342A100D9D06A /* Storyboards */,
@@ -307,16 +296,20 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -379,7 +372,6 @@
 				848FB53520F66CEB008A6B1B /* Post.swift in Sources */,
 				848FB53720F6708B008A6B1B /* UIImage+Size.swift in Sources */,
 				84B3EBB820F3F805002B71E5 /* CreateUsernameViewController.swift in Sources */,
-				84358A3A20F7ABD500B2265C /* Inceptionv3.mlmodel in Sources */,
 				84EECF1E20F5205C004FF302 /* MGPhotoHelper.swift in Sources */,
 				849E53D220F33BF000A49125 /* AppDelegate.swift in Sources */,
 				848FB53920F67193008A6B1B /* StorageReference+Post.swift in Sources */,

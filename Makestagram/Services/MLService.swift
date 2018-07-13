@@ -7,37 +7,31 @@
 //
 
 import UIKit
-import CoreML
-import Vision
+import Firebase
 
 struct MLService {
-    static func evaluateImage(for image: UIImage, post: Post, completionHandler: @escaping (_ post: Post) -> Void) {
+    static func evaluateImage(for uiImage: UIImage, post: Post, completionHandler: @escaping (_ post: Post) -> Void) {
+        let options = VisionLabelDetectorOptions(
+            confidenceThreshold: 0.5
+        )
         
-        guard let image = CIImage(image: image) else {
-            fatalError("Not able to convert UIImage to CIImage")
-        }
+        let vision = Vision.vision()
+        let labelDetector = vision.labelDetector(options: options)
         
-        guard let model = try? VNCoreMLModel(for: Inceptionv3().model) else {
-            fatalError("Can't load Inception ML model")
-        }
+        let visionImage = VisionImage(image: uiImage)
         
-        let request = VNCoreMLRequest(model: model, completionHandler: { request, error in
-            guard let results = request.results as? [VNClassificationObservation],
-                let topResult = results.first else {
-                    fatalError("Unexpected result type from VNCoreMLRequest")
+        labelDetector.detect(in: visionImage) { features, error in
+            guard error == nil, let features = features, !features.isEmpty else {
+                print("failure during classification, post not created")
+                return
             }
             
-            post.tags.append(topResult.identifier)
-            completionHandler(post)
-        })
-        
-        // Run the Core ML model classifier on global dispatch queue
-        let handler = VNImageRequestHandler(ciImage: image)
-        DispatchQueue.global(qos: .userInteractive).async {
-            do {
-                try handler.perform([request])
-            } catch {
-                print(error)
+            if features.count < 1 {
+                post.tags.append("<no tags>")
+                completionHandler(post)
+            } else {
+                post.tags.append(features[0].label)
+                completionHandler(post)
             }
         }
     }
