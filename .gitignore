@@ -75,3 +75,6 @@ fastlane/test_output
 
 # CoreML models
 *.mlmodel
+
+# Firebase
+firebase-debug.log
