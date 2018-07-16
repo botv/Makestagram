@@ -32,8 +32,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="53.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0W1-6a-una">
-                                                    <rect key="frame" x="15" y="0.0" width="74" height="53.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tags" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0W1-6a-una">
+                                                    <rect key="frame" x="15" y="0.0" width="32.5" height="53.5"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -60,7 +60,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="usernameLabel" destination="0W1-6a-una" id="AdZ-jJ-qvO"/>
+                                            <outlet property="tagsLabel" destination="0W1-6a-una" id="Tvx-eK-Bzs"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PostImageCell" rowHeight="375" id="1S4-tc-CQJ" customClass="PostImageCell" customModule="Makestagram" customModuleProvider="target">
@@ -73,39 +73,16 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0lf-g4-ScQ">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="374.5"/>
                                                 </imageView>
-                                                <view userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hU7-Wo-p7E">
-                                                    <rect key="frame" x="0.0" y="350" width="375" height="24"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6N0-kh-2Bb">
-                                                            <rect key="frame" x="15" y="0.0" width="360" height="24"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="bottom" secondItem="6N0-kh-2Bb" secondAttribute="bottom" id="8tp-Ec-67D"/>
-                                                        <constraint firstAttribute="height" constant="24" id="CV5-dQ-rmh"/>
-                                                        <constraint firstAttribute="trailing" secondItem="6N0-kh-2Bb" secondAttribute="trailing" id="RCS-Xc-IN8"/>
-                                                        <constraint firstItem="6N0-kh-2Bb" firstAttribute="top" secondItem="hU7-Wo-p7E" secondAttribute="top" id="S3d-o3-pCi"/>
-                                                        <constraint firstItem="6N0-kh-2Bb" firstAttribute="leading" secondItem="hU7-Wo-p7E" secondAttribute="leading" constant="15" id="SKb-PT-y16"/>
-                                                    </constraints>
-                                                </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="0lf-g4-ScQ" secondAttribute="trailing" id="79A-uV-9Re"/>
-                                                <constraint firstAttribute="bottom" secondItem="hU7-Wo-p7E" secondAttribute="bottom" id="7f7-Zg-b0V"/>
                                                 <constraint firstAttribute="bottom" secondItem="0lf-g4-ScQ" secondAttribute="bottom" id="BwN-RT-TO4"/>
-                                                <constraint firstAttribute="trailing" secondItem="hU7-Wo-p7E" secondAttribute="trailing" id="FIb-e6-vO2"/>
-                                                <constraint firstItem="hU7-Wo-p7E" firstAttribute="leading" secondItem="36l-2B-EFA" secondAttribute="leading" id="LtE-Ys-AfM"/>
                                                 <constraint firstItem="0lf-g4-ScQ" firstAttribute="top" secondItem="36l-2B-EFA" secondAttribute="top" id="b5U-eD-TZE"/>
                                                 <constraint firstItem="0lf-g4-ScQ" firstAttribute="leading" secondItem="36l-2B-EFA" secondAttribute="leading" id="iCV-gu-vFv"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="postImageView" destination="0lf-g4-ScQ" id="LWO-d3-qYu"/>
-                                            <outlet property="postTagsLabel" destination="6N0-kh-2Bb" id="TbH-af-EGM"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostActionCell" rowHeight="46" id="HZr-BP-lCo" customClass="PostActionCell" customModule="Makestagram" customModuleProvider="target">

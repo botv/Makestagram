@@ -25,12 +25,24 @@ struct PostService {
     }
     
     private static func create(forURLString urlString: String, aspectHeight: CGFloat, image: UIImage) {
-        let currentUser = User.current
         let post = Post(imageURL: urlString, imageHeight: aspectHeight)
         MLService.evaluateImage(for: image, post: post, completionHandler: { (post) in
             let dict = post.dictValue
-            let postRef = Database.database().reference().child("posts").child(currentUser.uid).childByAutoId()
+            let postRef = Database.database().reference().child("posts").childByAutoId()
             postRef.updateChildValues(dict)
+        })
+    }
+    
+    static func posts(completion: @escaping ([Post]) -> Void) {
+        let ref = Database.database().reference().child("posts")
+        
+        ref.observeSingleEvent(of: .value, with: { (snapshot) in
+            guard let snapshot = snapshot.children.allObjects as? [DataSnapshot] else {
+                return completion([])
+            }
+            
+            let posts = snapshot.reversed().compactMap(Post.init)
+            completion(posts)
         })
     }
 }

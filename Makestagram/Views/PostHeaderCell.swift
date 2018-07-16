@@ -10,7 +10,7 @@ import UIKit
 
 class PostHeaderCell: UITableViewCell {
     
-    @IBOutlet weak var usernameLabel: UILabel!
+    @IBOutlet weak var tagsLabel: UILabel!
     
     static let height: CGFloat = 54
     

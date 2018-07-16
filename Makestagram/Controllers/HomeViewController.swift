@@ -22,7 +22,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        UserService.posts(for: User.current) { (posts) in
+        PostService.posts() { (posts) in
             self.posts = posts
             self.tableView.reloadData()
         }
@@ -51,7 +51,7 @@ extension HomeViewController: UITableViewDataSource {
     }
     
     @IBAction func reloadButton(_ sender: Any) {
-        UserService.posts(for: User.current) { (posts) in
+        PostService.posts() { (posts) in
             self.posts = posts
             self.tableView.reloadData()
         }
@@ -67,7 +67,7 @@ extension HomeViewController: UITableViewDataSource {
         switch indexPath.row {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "PostHeaderCell") as! PostHeaderCell
-            cell.usernameLabel.text = User.current.username
+            cell.tagsLabel.text = post.tags[0]
             
             return cell
             
@@ -75,7 +75,6 @@ extension HomeViewController: UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(withIdentifier: "PostImageCell") as! PostImageCell
             let imageURL = URL(string: post.imageURL)
             cell.postImageView.kf.setImage(with: imageURL)
-            cell.postTagsLabel.text = post.tags[0]
             
             return cell
             
