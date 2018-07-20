@@ -20,8 +20,8 @@ struct PostService {
             
             let urlString = downloadURL.absoluteString
             let aspectHeight = image.aspectHeight
-            APIService.getVector(for: urlString)
             create(forURLString: urlString, aspectHeight: aspectHeight, image: image)
+            APIService.getVector(for: urlString)
         }
     }
     

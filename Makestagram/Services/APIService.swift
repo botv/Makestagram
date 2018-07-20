@@ -12,11 +12,10 @@ import SwiftyJSON
 struct APIService {
     static func getVector(for imageURL: String) {
         let parameters: Parameters = [
-            "url": imageURL.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!
+            "imageURL": imageURL.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!
         ]
         
         Alamofire.request("https://api.benbotvinick.com/face", parameters: parameters).responseJSON() { response in
-            print(response.data!)
             switch response.result {
             case .success:
                 if let data = response.data {
