@@ -15,6 +15,8 @@ struct APIService {
             "imageURL": imageURL.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!
         ]
         
+        print("performing query")
+        
         Alamofire.request("https://api.benbotvinick.com/face", parameters: parameters).responseJSON() { response in
             switch response.result {
             case .success:
