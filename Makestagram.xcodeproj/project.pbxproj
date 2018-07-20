@@ -22,6 +22,7 @@
 		849E53D720F33BF000A49125 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849E53D520F33BF000A49125 /* Main.storyboard */; };
 		849E53D920F33BF100A49125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849E53D820F33BF100A49125 /* Assets.xcassets */; };
 		849E53DC20F33BF100A49125 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849E53DA20F33BF100A49125 /* LaunchScreen.storyboard */; };
+		84AB870320FE4ADB002F1B52 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AB870220FE4ADB002F1B52 /* APIService.swift */; };
 		84B3EBAA20F3C1D2002B71E5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3EBA920F3C1D2002B71E5 /* LoginViewController.swift */; };
 		84B3EBAC20F3CB31002B71E5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3EBAB20F3CB31002B71E5 /* User.swift */; };
 		84B3EBB820F3F805002B71E5 /* CreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3EBB720F3F805002B71E5 /* CreateUsernameViewController.swift */; };
@@ -56,6 +57,7 @@
 		849E53D820F33BF100A49125 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		849E53DB20F33BF100A49125 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		849E53DD20F33BF100A49125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84AB870220FE4ADB002F1B52 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		84B3EBA920F3C1D2002B71E5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		84B3EBAB20F3CB31002B71E5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		84B3EBB720F3F805002B71E5 /* CreateUsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUsernameViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			children = (
 				84B3EBBD20F4015F002B71E5 /* UserService.swift */,
 				840B531A20F548D7005649F0 /* StorageService.swift */,
+				84AB870220FE4ADB002F1B52 /* APIService.swift */,
 				84D96ECA20F665AA007CA4ED /* PostService.swift */,
 				848FB54720F6C41F008A6B1B /* MLService.swift */,
 			);
@@ -295,21 +298,25 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -362,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84B3EBAC20F3CB31002B71E5 /* User.swift in Sources */,
+				84AB870320FE4ADB002F1B52 /* APIService.swift in Sources */,
 				840B531B20F548D7005649F0 /* StorageService.swift in Sources */,
 				84B3EBAA20F3C1D2002B71E5 /* LoginViewController.swift in Sources */,
 				848FB54020F6759B008A6B1B /* HomeViewController.swift in Sources */,

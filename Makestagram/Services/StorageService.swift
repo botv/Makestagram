@@ -15,12 +15,14 @@ struct StorageService {
             return completion(nil)
         }
         
-        reference.putData(imageData, metadata: nil, completion: { (metadata, error) in
+        let uploadTask = reference.putData(imageData, metadata: nil, completion: { (metadata, error) in
             if let error = error {
                 assertionFailure(error.localizedDescription)
                 return completion(nil)
             }
-            
+        })
+        
+        uploadTask.observe(.success) { snapshot in
             reference.downloadURL(completion: { (url, error) in
                 if let error = error {
                     assertionFailure(error.localizedDescription)
@@ -28,6 +30,6 @@ struct StorageService {
                 }
                 completion(url)
             })
-        })
+        }
     }
 }
